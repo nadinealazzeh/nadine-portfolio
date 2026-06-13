@@ -1,0 +1,80 @@
+import { useEffect, useRef, useState } from 'react';
+import {
+  FaHtml5,
+  FaCss3Alt,
+  FaJs,
+  FaReact,
+  FaFigma,
+  FaGitAlt,
+} from 'react-icons/fa';
+import { FaJava, FaPython } from 'react-icons/fa';
+import { SiCplusplus } from 'react-icons/si';
+import { SiPhp} from 'react-icons/si';
+import '../styles/components/skills.css';
+
+const skills = [
+  { name: 'HTML5', icon: <FaHtml5 />, percent: 95 },
+  { name: 'CSS3', icon: <FaCss3Alt />, percent: 90 },
+  { name: 'JavaScript', icon: <FaJs />, percent: 85 },
+  { name: 'React', icon: <FaReact />, percent: 80 },
+  { name: 'Figma', icon: <FaFigma />, percent: 85 },
+  { name: 'Git & GitHub', icon: <FaGitAlt />, percent: 80 },
+  { name: 'PHP', icon: <SiPhp />, percent: 65 },
+  { name: 'Java', icon: <FaJava />, percent: 80 },
+{ name: 'C++', icon: <SiCplusplus />, percent: 60 },
+{ name: 'Python', icon: <FaPython />, percent: 55 },
+];
+
+const Skills = () => {
+  const [visible, setVisible] = useState(false);
+  const ref = useRef(null);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setVisible(true);
+        }
+      },
+      { threshold: 0.15 }
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
+
+  return (
+    <section className="skills" id="skills">
+      <div className="container">
+        <div className="section-header reveal" ref={ref}>
+          <span className="section-label">My Skills</span>
+          <h2 className="section-title">Technologies & Tools</h2>
+          <p className="section-subtitle">
+            A curated set of tools and technologies I work with to build modern web experiences.
+          </p>
+        </div>
+        <div className="skills-grid">
+          {skills.map((skill, i) => (
+            <div
+              className="skill-item reveal"
+              key={skill.name}
+              style={{ animationDelay: `${i * 0.08}s` }}
+            >
+              <div className="skill-icon">{skill.icon}</div>
+              <span className="skill-name">{skill.name}</span>
+              <div className="skill-level">
+                <div
+                  className={`skill-level-bar${visible ? ' animated' : ''}`}
+                  style={{ '--skill-percent': `${skill.percent}%` }}
+                />
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Skills;
