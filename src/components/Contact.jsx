@@ -32,7 +32,10 @@ const Contact = () => {
         </div>
         <div className="contact-grid">
           <div className="contact-info-cards reveal reveal-delay-1">
-            <div className="contact-card">
+            <a
+              href="tel:+970592213987"
+              className="contact-card"
+            >
               <div className="contact-card-icon">
                 <FiPhone />
               </div>
@@ -40,8 +43,11 @@ const Contact = () => {
                 <h3>Phone</h3>
                 <p>+970 592 213 987</p>
               </div>
-            </div>
-            <div className="contact-card">
+            </a>
+            <a
+              href="mailto:nadinewailalazzeh@gmail.com"
+              className="contact-card"
+            >
               <div className="contact-card-icon">
                 <FiMail />
               </div>
@@ -49,22 +55,9 @@ const Contact = () => {
                 <h3>Email</h3>
                 <p>nadinewailalazzeh@gmail.com</p>
               </div>
-            </div>
+            </a>
           </div>
-          <form
-            className="contact-form reveal reveal-delay-2"
-            onSubmit={(e) => e.preventDefault()}
-          >
-            <div className="contact-form-row">
-              <input type="text" placeholder="Your Name" required />
-              <input type="email" placeholder="Your Email" required />
-            </div>
-            <input type="text" placeholder="Subject" />
-            <textarea placeholder="Your Message" required />
-            <button type="submit" className="btn btn--primary btn--lg" style={{ alignSelf: 'flex-start' }}>
-              <FiSend style={{ marginRight: 8 }} /> Send Message
-            </button>
-          </form>
+
         </div>
       </div>
     </section>

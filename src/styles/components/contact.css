@@ -1,14 +1,14 @@
 .contact-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 48px;
-  align-items: start;
+  display: flex;
+  justify-content: center;
 }
 
 .contact-info-cards {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  width: 100%;
+  max-width: 500px;
 }
 
 .contact-card {
@@ -20,6 +20,8 @@
   border: 1px solid var(--border);
   border-radius: var(--radius-md);
   transition: all var(--transition);
+  text-decoration: none;
+  color: inherit;
 }
 
 .contact-card:hover {
