@@ -29,7 +29,7 @@ const Hero = () => {
           <a href="https://github.com/nadinealazzeh" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
             <FaGithub />
           </a>
-          <a href="https://drive.google.com/file/d/1CRn6QXVED_twTrjgDCP_Hp52WuFCn-5c/view?usp=sharing" target="_blank" rel="noopener noreferrer" aria-label="Resume">
+          <a href="https://drive.google.com/file/d/1GCzNGng5LR2V1bAmUaJn3CbF1bB-cknP/view?usp=sharing" target="_blank" rel="noopener noreferrer" aria-label="Resume">
             <FaFileAlt />
           </a>
         </div>
