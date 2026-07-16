@@ -9,20 +9,39 @@ import {
 } from 'react-icons/fa';
 import { FaJava, FaPython } from 'react-icons/fa';
 import { SiCplusplus } from 'react-icons/si';
-import { SiPhp} from 'react-icons/si';
-import '../styles/components/skills.css';
+import { SiPhp, SiSass, SiTypescript } from 'react-icons/si'; import '../styles/components/skills.css';
+import photoshop from '../IMG/adobe-ps.svg';
+import illustrator from '../IMG/adobe-ai.svg';
+import indesign from '../IMG/adobe-id.svg';
 
 const skills = [
   { name: 'HTML5', icon: <FaHtml5 />, percent: 95 },
   { name: 'CSS3', icon: <FaCss3Alt />, percent: 90 },
+  { name: 'SCSS', icon: <SiSass />, percent: 80 },
   { name: 'JavaScript', icon: <FaJs />, percent: 85 },
+  { name: 'TypeScript', icon: <SiTypescript />, percent: 75 },
   { name: 'React', icon: <FaReact />, percent: 80 },
-  { name: 'Figma', icon: <FaFigma />, percent: 85 },
-  { name: 'Git & GitHub', icon: <FaGitAlt />, percent: 80 },
   { name: 'PHP', icon: <SiPhp />, percent: 65 },
   { name: 'Java', icon: <FaJava />, percent: 80 },
-{ name: 'C++', icon: <SiCplusplus />, percent: 60 },
-{ name: 'Python', icon: <FaPython />, percent: 55 },
+  { name: 'C++', icon: <SiCplusplus />, percent: 60 },
+  { name: 'Python', icon: <FaPython />, percent: 55 },
+  { name: 'Git & GitHub', icon: <FaGitAlt />, percent: 80 },
+  { name: 'Figma', icon: <FaFigma />, percent: 85 },
+  {
+    name: 'Adobe Photoshop',
+    image: photoshop,
+    percent: 60
+  },
+  {
+    name: 'Adobe Illustrator',
+    image: illustrator,
+    percent: 85
+  },
+  {
+    name: 'Adobe InDesign',
+    image: indesign,
+    percent: 90
+  },
 ];
 
 const Skills = () => {
@@ -61,7 +80,13 @@ const Skills = () => {
               key={skill.name}
               style={{ animationDelay: `${i * 0.08}s` }}
             >
-              <div className="skill-icon">{skill.icon}</div>
+              <div className="skill-icon">
+                {skill.image ? (
+                  <img src={skill.image} alt={skill.name} />
+                ) : (
+                  skill.icon
+                )}
+              </div>
               <span className="skill-name">{skill.name}</span>
               <div className="skill-level">
                 <div
