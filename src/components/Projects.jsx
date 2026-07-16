@@ -7,6 +7,7 @@ import itclub from '../IMG/itclup.png';
 import apartment from '../IMG/appartment.png';
 import mercado from '../IMG/mercado.png';
 import planner from '../IMG/planner.png';
+import logitrack from '../IMG/logitrack.png';
 
 
 const projects = [
@@ -46,6 +47,12 @@ const projects = [
     category: 'Web Development',
     image: planner,
     link: 'https://studiesplanner.netlify.app',
+  },
+  {
+    title:'LogiTrack',
+    category: 'Web Development',
+    image:logitrack,
+    link:'https://logi-track-drab.vercel.app'
   }
 ];
 
