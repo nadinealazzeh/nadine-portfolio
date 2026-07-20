@@ -17,7 +17,7 @@ const Footer = () => {
           <a href="https://github.com/nadinealazzeh" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
             <FaGithub />
           </a>
-          <a href="https://drive.google.com/file/d/1GCzNGng5LR2V1bAmUaJn3CbF1bB-cknP/view?usp=sharing" target="_blank" rel="noopener noreferrer" aria-label="Resume">
+          <a href="https://drive.google.com/file/d/1vEBc7wNjlBMslppvRfeaztQQACxgAq7M/view?usp=sharing" target="_blank" rel="noopener noreferrer" aria-label="Resume">
             <FaFileAlt />
           </a>
         </div>

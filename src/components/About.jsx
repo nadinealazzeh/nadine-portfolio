@@ -4,9 +4,9 @@ import '../styles/components/about.css';
 import profilePic from '../IMG/nadine_pic.jpg';
 
 const stats = [
-  { number: '3+', label: 'Years Learning' },
-  { number: '5+', label: 'Projects Built' },
-  { number: '6+', label: 'Technologies' },
+  { number: '5+', label: 'Years Learning' },
+  { number: '10+', label: 'Projects Built' },
+  { number: '21+', label: 'Technologies' },
 ];
 
 const About = () => {
