@@ -35,7 +35,7 @@ const skills = [
   { name: "JavaScript", icon: <FaJs />, percent: 90 },
   { name: "TypeScript", icon: <SiTypescript />, percent: 80 },
   { name: "React", icon: <FaReact />, percent: 85 },
-  { name: "Angular", icon: <SiAngular />, percent: 70 },
+  { name: "Angular", icon: <SiAngular />, percent: 55 },
   { name: "Vite", icon: <SiVite />, percent: 85 },
   { name: "Git & GitHub", icon: <FaGitAlt />, percent: 85 },
   { name: "Vercel", icon: <SiVercel />, percent: 80 },
@@ -46,10 +46,10 @@ const skills = [
   { name: "Adobe InDesign", image: indesign, percent: 90 },
   { name: "Prompt Engineering", icon: <FaWandMagicSparkles />, percent: 80 },
   { name: "MySQL", icon: <SiMysql />, percent: 75 },
-  { name: "Java", icon: <FaJava />, percent: 80 },
+  { name: "Java", icon: <FaJava />, percent: 90 },
   { name: "PHP", icon: <SiPhp />, percent: 65 },
-  { name: "Python", icon: <FaPython />, percent: 60 },
-  { name: "C++", icon: <SiCplusplus />, percent: 60 },
+  { name: "Python", icon: <FaPython />, percent: 70 },
+  { name: "C++", icon: <SiCplusplus />, percent: 90 },
 ];
 
 const Skills = () => {
