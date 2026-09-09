@@ -5,9 +5,9 @@ import '../styles/components/projects.css';
 import candles from '../IMG/candels.png';
 import uispark from '../IMG/uispark.png';
 import itclub from '../IMG/itclup.png';
-import apartment from '../IMG/appartment.png';
+import library from '../IMG/library.png';
 import mercado from '../IMG/mercado.png';
-import planner from '../IMG/planner.png';
+import planner from '../IMG/study_planner.png';
 import logitrack from '../IMG/logitrack.png';
 
 const projects = [
@@ -39,13 +39,13 @@ const projects = [
     linkText: 'View Design',
   },
   {
-    title: 'Apartment Management System',
+    title: 'Library Management System',
     category: 'Full Stack Development',
-    description: 'A web system for managing apartments, tenants, leases, payments, and maintenance requests.',
+    description: 'A full-stack library system with author/book/user management, session-based auth, borrow-return tracking, and a REST API.',
     tools: ['HTML5', 'CSS3', 'PHP', 'MySQL'],
-    image: apartment,
-    link: 'https://www.linkedin.com/posts/nadine-alazzeh_webdevelopment-sql-php-activity-7340438028781297664-56GO/',
-    linkText: 'View Project',
+    image: library,
+    link: 'http://nadinelibrary.gamer.free/library/admin/login.php',
+    linkText: 'Live Demo',
   },
   {
     title: 'Mercado',
@@ -58,11 +58,11 @@ const projects = [
   },
   {
     title: 'StudyPlanner',
-    category: 'Web Development',
-    description: 'A student productivity platform for organizing coursework, exams, assignments, and study sessions.',
-    tools: ['React', 'Vite', 'CSS3', 'AI-Assisted'],
+    category: 'Full Stack Development',
+    description: 'A student productivity platform with real user accounts, tracking coursework, exams, assignments, and study sessions across courses.',
+    tools: ['React', 'Vite', 'Supabase', 'CSS3', 'AI-Assisted'],
     image: planner,
-    link: 'https://studiesplanner.netlify.app',
+    link: 'https://studyplanner-taupe.vercel.app',
     linkText: 'Live Demo',
   },
   {

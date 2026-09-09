@@ -25,6 +25,7 @@ import photoshop from '../IMG/adobe-ps.svg';
 import illustrator from '../IMG/adobe-ai.svg';
 import indesign from '../IMG/adobe-id.svg';
 import { FaWandMagicSparkles } from "react-icons/fa6";
+import { SiSupabase, SiPostgresql, SiPostman } from "react-icons/si";
 
 
 const skills = [
@@ -46,10 +47,15 @@ const skills = [
   { name: "Adobe InDesign", image: indesign, percent: 90 },
   { name: "Prompt Engineering", icon: <FaWandMagicSparkles />, percent: 80 },
   { name: "MySQL", icon: <SiMysql />, percent: 75 },
+  { name: "Supabase", icon: <SiSupabase />, percent: 70 },
+  { name: "PostgreSQL", icon: <SiPostgresql />, percent: 65 },
+  { name: "Postman", icon: <SiPostman />, percent: 75 },
   { name: "Java", icon: <FaJava />, percent: 90 },
-  { name: "PHP", icon: <SiPhp />, percent: 65 },
+  { name: "PHP", icon: <SiPhp />, percent: 90 },
   { name: "Python", icon: <FaPython />, percent: 70 },
   { name: "C++", icon: <SiCplusplus />, percent: 90 },
+
+
 ];
 
 const Skills = () => {
