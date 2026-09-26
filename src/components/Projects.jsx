@@ -9,6 +9,7 @@ import library from '../IMG/library.png';
 import mercado from '../IMG/mercado.png';
 import planner from '../IMG/study_planner.png';
 import logitrack from '../IMG/logitrack.png';
+import sprintboard from '../IMG/sprintboard.png'
 
 const projects = [
   {
@@ -74,6 +75,15 @@ const projects = [
     link: 'https://logi-track-drab.vercel.app',
     linkText: 'Live Demo',
   },
+  {
+  title: 'SprintBoard',
+  category: 'Web Development',
+  description: 'A task management board for creating, organizing, and managing tasks with drag-and-drop functionality and reactive state updates.',
+  tools: ['Angular', 'TypeScript', 'Reactive Forms', 'Signals', 'Drag & Drop'],
+  image: sprintboard,
+  link: 'https://sprintboard-three.vercel.app/board',
+  linkText: 'Live Demo',
+},
 ];
 
 const Projects = () => {
