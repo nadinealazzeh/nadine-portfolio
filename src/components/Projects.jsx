@@ -10,6 +10,7 @@ import mercado from '../IMG/mercado.png';
 import planner from '../IMG/study_planner.png';
 import logitrack from '../IMG/logitrack.png';
 import sprintboard from '../IMG/sprintboard.png'
+import atelier from '../IMG/atelier.png';
 
 const projects = [
   {
@@ -83,6 +84,15 @@ const projects = [
   image: sprintboard,
   link: 'https://sprintboard-three.vercel.app/board',
   linkText: 'Live Demo',
+},
+{
+  title: 'Atelier',
+  category: 'UI/UX Design',
+  description: 'A concept website for discovering and booking art workshops in Ramallah, Palestine, with a warm brand identity, custom logo, and a landing page inspired by handmade art.',
+  tools: ['Figma', 'UI/UX Design', 'Branding', 'Logo Design', 'Landing Page'],
+  image: atelier,
+  link: 'https://www.behance.net/gallery/257155159/Atelier',
+  linkText: 'View Case Study',
 },
 ];
 
