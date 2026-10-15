@@ -14,10 +14,13 @@ const Footer = () => {
           <a href="https://www.linkedin.com/in/nadinealazzeh/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
             <FaLinkedinIn />
           </a>
+          <a href="https://www.behance.net/nadinealazzeh" target="_blank" rel="noopener noreferrer" aria-label="Behance">
+            <FaBehance />
+          </a>
           <a href="https://github.com/nadinealazzeh" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
             <FaGithub />
           </a>
-          <a href="https://drive.google.com/file/d/1vEBc7wNjlBMslppvRfeaztQQACxgAq7M/view?usp=sharing" target="_blank" rel="noopener noreferrer" aria-label="Resume">
+          <a href="https://drive.google.com/file/d/1WGOd1FKtSCQHmUVMn7K7qK3r1LTCvCkF/view?usp=sharing" target="_blank" rel="noopener noreferrer" aria-label="Resume">
             <FaFileAlt />
           </a>
         </div>
