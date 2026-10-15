@@ -10,7 +10,7 @@ import mercado from '../IMG/mercado.png';
 import planner from '../IMG/study_planner.png';
 import logitrack from '../IMG/logitrack.png';
 import sprintboard from '../IMG/sprintboard.png'
-import atelier from '../IMG/atelier.png';
+import atelier from '../IMG/Atelier.JPG';
 
 const projects = [
   {
