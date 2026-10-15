@@ -1,12 +1,11 @@
 import { useEffect, useRef } from 'react';
-import { FaUser } from 'react-icons/fa';
 import '../styles/components/about.css';
 import profilePic from '../IMG/nadine_pic.jpg';
 
 const stats = [
-  { number: '5+', label: 'Years Learning' },
-  { number: '10+', label: 'Projects Built' },
-  { number: '21+', label: 'Technologies' },
+  { number: '6+', label: 'Years Learning' },
+  { number: '8+', label: 'Projects' },
+  { number: '25+', label: 'Technologies' },
 ];
 
 const About = () => {
@@ -34,7 +33,7 @@ const About = () => {
           <span className="section-label">About Me</span>
           <h2 className="section-title">Who I Am</h2>
           <p className="section-subtitle">
-            A passionate developer dedicated to crafting meaningful digital experiences.
+            A designer and developer dedicated to crafting meaningful, user-centered digital experiences.
           </p>
         </div>
         <div className="about-grid">
@@ -43,28 +42,29 @@ const About = () => {
               <img
                 src={profilePic}
                 className="about-image-placeholder"
-                alt="profile pic"
+                alt="Nadine Alazzeh"
               />
-              
             </div>
           </div>
           <div className="about-text reveal reveal-delay-2">
             <h3>
-              Front-End Developer <span>& UI/UX Designer</span>
+              UI/UX Designer <span>& Front-End Developer</span>
             </h3>
             <p>
-              I'm Nadine Alazzeh, a Front-End Developer and UI/UX Designer based in Palestine.
-              I specialize in building responsive, accessible, and visually compelling web experiences
-              using modern technologies like React, JavaScript, and CSS.
+              I'm Nadine Alazzeh, a UI/UX Designer and Front-End Developer based in Palestine.
+              I design clear, accessible, and visually compelling experiences for web and mobile,
+              from user research and wireframes to polished interfaces in Figma, and I bring them
+              to life using React, Angular, and TypeScript.
             </p>
             <p>
               With a strong foundation in both design and development, I bridge the gap between
-              aesthetics and functionality. I enjoy turning complex problems into simple, beautiful,
-              and intuitive solutions that make a real impact.
+              aesthetics and functionality. I enjoy understanding users' needs and turning complex
+              problems into simple, intuitive solutions that make a real impact.
             </p>
             <p>
-              When I'm not coding, you'll find me exploring new design trends, contributing to
-              open-source projects, or working on creative side projects that push my skills further.
+              When I'm not designing or coding, you'll find me exploring new design trends,
+              studying great user experiences, or working on creative side projects that push
+              my skills further.
             </p>
             <div className="about-stats">
               {stats.map((stat) => (
