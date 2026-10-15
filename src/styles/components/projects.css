@@ -2,6 +2,47 @@
   background: var(--bg-secondary);
 }
 
+/* ===== Filter buttons ===== */
+.project-filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin: -24px auto 40px;
+}
+
+.project-filter {
+  padding: 10px 22px;
+  color: var(--text-secondary);
+  background: var(--bg-glass);
+  border: 1px solid var(--border);
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition:
+    color var(--transition-fast),
+    background var(--transition-fast),
+    border-color var(--transition-fast);
+}
+
+.project-filter:hover {
+  color: var(--primary);
+  border-color: rgba(209, 125, 152, 0.4);
+}
+
+.project-filter.active {
+  color: var(--secondary);
+  background: var(--primary);
+  border-color: var(--primary);
+  font-weight: 600;
+}
+
+.project-filter:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 3px;
+}
+
+/* ===== Grid & cards ===== */
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
@@ -36,6 +77,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: top center;
   transition: transform 0.6s ease;
 }
 
@@ -55,27 +97,27 @@
   opacity: 1;
 }
 
-.project-category {
-  position: absolute;
-  top: 16px;
-  left: 16px;
-  padding: 6px 14px;
-  background: rgba(209, 125, 152, 0.15);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  color: var(--primary);
-  border: 1px solid rgba(209, 125, 152, 0.2);
-  border-radius: 50px;
-  font-size: 0.75rem;
-  font-weight: 600;
-}
-
+/* ===== Card content ===== */
 .project-info {
   display: flex;
   flex: 1;
   flex-direction: column;
   gap: 12px;
   padding: 24px;
+}
+
+/* Category now sits above the title instead of covering the image */
+.project-category-inline {
+  margin-bottom: -4px;
+  color: var(--primary);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+[data-theme='light'] .project-category-inline {
+  color: var(--primary-dark);
 }
 
 .project-info h3 {
@@ -113,6 +155,10 @@
   line-height: 1;
 }
 
+[data-theme='light'] .project-tools span {
+  color: var(--primary-dark);
+}
+
 .project-links {
   display: flex;
   align-items: center;
@@ -140,7 +186,18 @@
   transform: translateX(4px);
 }
 
+/* ===== Mobile ===== */
 @media (max-width: 768px) {
+  .project-filters {
+    margin: -12px auto 32px;
+    gap: 8px;
+  }
+
+  .project-filter {
+    padding: 9px 16px;
+    font-size: 0.8rem;
+  }
+
   .projects-grid {
     grid-template-columns: 1fr;
   }
